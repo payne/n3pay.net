@@ -1,11 +1,11 @@
 export default {
-	title: "Eleventy Base Blog v9",
-	url: "https://example.com/",
+	title: "N3PAY.net - New HAM radio operator",
+	url: "https://N3PAY.net/",
 	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "Some notes about my journey as a new HAM radio operator.",
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "Matt Payne",
+		email: "N3PAY@ARRL.net",
+		url: "https://N3PAY.net/about/"
 	}
 }
