@@ -57,7 +57,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 36em;
+	max-width: 90%;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
