@@ -6,6 +6,7 @@ slug: "/posts/OLUG"
 tags:
   - "Omaha"
   - "Clubs"
+  - "OLUG"
 ---
 
 The Omaha Linux Users Group ([OLUG.org](http://OLUG.org)) is a friendly group.
