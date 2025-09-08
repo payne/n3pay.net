@@ -33,7 +33,9 @@ Here's a list of NETs are two local VHF repeaters that I'm trying to attend regu
 
 [W0WYV](https://www.repeaterbook.com/repeaters/details.php?state_id=31&ID=8613)
 * Downlink 147.39
-* Uplink 144.99
+* Uplink 147.99
 * Offset +0.600
 * Uplink Tone 131.8
 
+Note: On 9/7/2025, fixed typo with the
+[W0WYV](https://www.repeaterbook.com/repeaters/details.php?state_id=31&ID=8613) repeater.
