@@ -12,7 +12,9 @@ The [Omaha's Aksarben Amateur Radio Club (AARC)](https://www.aksarbenarc.org/hom
 
 Meetings are open to the public and are held on the second Friday of most months at the [American Red Cross, 2912 S 80th Ave](https://maps.app.goo.gl/BPFFG4Qcaq1cBQV76). Park and enter on the west side of the building. Meetings start at 7 pm.
 
-The next meeting's program is: Sean, AD0QG, on APRS.
+The next meeting's program is:
+- Sean, AD0QG
+- APRS
 
 ## Communication
 
