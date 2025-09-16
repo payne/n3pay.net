@@ -18,8 +18,8 @@ The next meeting October 10, 2025 has program:
 
 ## Upcoming Events
 1. [Market to Market Relay](https://www.markettomarketrelay.com/locations/nebraska/) -- Saturday 11 October 2025 needs 15 to 20 volunteers.
-   * [More details on AksarbenARC.org](https://www.aksarbenarc.org/home/)
-	 * [Sign up to help](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ocIpFhUQ0NYS05KOFhKQUw2R1dBNVhWQ0pSNDVDSy4u)
+	* [More details on AksarbenARC.org](https://www.aksarbenarc.org/home/)
+	* [Sign up to help](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ocIpFhUQ0NYS05KOFhKQUw2R1dBNVhWQ0pSNDVDSy4u)
 
 ## Communication
 
