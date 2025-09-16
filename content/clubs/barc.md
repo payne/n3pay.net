@@ -13,7 +13,10 @@ The
 
 Meetings are open to the public and are held at 7:30pm on the third Thursday of most months at the [Masonic Lodge dining Hall (1910 Franklin St., Bellevue, NE)](https://maps.app.goo.gl/Vwvxk5JajsqdLVGeA).  The doors typically open at 7pm.
 
-The next meeting's program is: Unknown
+### Next Meeting's educational program is:
+#### Jim KX0U will talk about and demo Echolink
+I'm really looking forward to this talk because Echolink is both interesting and of great utility.  Taking parts in NETs without a good RF connection to the repeater is a game changer.
+
 
 ## Communication
 
