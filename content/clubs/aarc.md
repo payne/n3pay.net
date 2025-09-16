@@ -16,6 +16,10 @@ The next meeting October 10, 2025 has program:
 - Aaron, Aaron KC0WIH
 - Radio with Linux
 
+### Board meetings -- 6 pm on the last Tuesday of each month at 76th & Cass St. Hy-Vee in the Cafe
+1. Board meetings are open to the public
+2. Meeting minutes for each board meeting are published
+
 ## Upcoming Events
 1. [Market to Market Relay](https://www.markettomarketrelay.com/locations/nebraska/) -- Saturday 11 October 2025 needs 15 to 20 volunteers.
 	* [More details on AksarbenARC.org](https://www.aksarbenarc.org/home/)
