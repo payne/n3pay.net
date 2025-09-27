@@ -12,9 +12,15 @@ The [Omaha's Aksarben Amateur Radio Club (AARC)](https://www.aksarbenarc.org/hom
 
 Meetings are open to the public and are held on the second Friday of most months at the [American Red Cross, 2912 S 80th Ave](https://maps.app.goo.gl/BPFFG4Qcaq1cBQV76). Park and enter on the west side of the building. Meetings start at 7 pm.
 
+| When | Speaker | Topic | Notes|
+|------|---------|-------|------|
+| October 10, 2025  | Aaron KC0WIH  | Radios & Linux           | Linux is getting easier and more fun | 
+| November 14, 2025 | George KC0HYI | DMR                      | Voice communication that is easier to hear and more | 
+| December 12, 2025 | Everyone!     | PARTY!                   | Ham radio is wonderful - celebrate!           |
+| January 9, 2026   | Matt N3PAY    | Talking about the future | There is no fate but what we make for ourselves. | 
+
 The next meeting October 10, 2025 has program:
-- Aaron, Aaron KC0WIH
-- Radio with Linux
+- Topic: Radio with Linux Speaker: Aaron KC0WIH
 
 ### Board meetings -- 6 pm on the last Tuesday of each month at 76th & Cass St. Hy-Vee in the Cafe
 1. Board meetings are open to the public
