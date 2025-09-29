@@ -14,3 +14,5 @@ I hope to put a mast up on the east wall of our detached garage.
 Here is a picture of the outer garage wall:
 ![Garage wall](duke.png)
 
+Note!  The total length of the EZ TM-30 mast is 28'.   28' is not the length of the red line in the picture above.
+
