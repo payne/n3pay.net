@@ -14,8 +14,8 @@ The
 Meetings are open to the public and are held at 7:30pm on the third Thursday of most months at the [Masonic Lodge dining Hall (1910 Franklin St., Bellevue, NE)](https://maps.app.goo.gl/Vwvxk5JajsqdLVGeA).  The doors typically open at 7pm.
 
 ### Next Meeting's educational program is:
-#### Jim KX0U will talk about and demo Echolink
-I'm really looking forward to this talk because Echolink is both interesting and of great utility.  Taking parts in NETs without a good RF connection to the repeater is a game changer.
+
+At the upcoming meeting on  Thursday 10/16/2025 the program will be a presentation and chat about DMR radio.
 
 
 ## Communication
@@ -25,5 +25,5 @@ I'm really looking forward to this talk because Echolink is both interesting and
 
 Please email N3PAY@ARRL.net if you have questions.
 
-*Last update: 2025 September 9*
+*Last update: 2025 October 9*
 
