@@ -9,7 +9,7 @@ tags:
   - "Portable"
 ---
 
-Putting an antenna atop a speaker stand is an idea I learned from folks in [BARC](clubs/barc/).
+Putting an antenna atop a speaker stand is an idea I learned from folks in [BARC](/clubs/barc/).
 
 ![Nice mounting for the antenna on the speaker stand](SpeakerMast_2025-11-05.jpg).  This uses 
 [Dual Antenna Mast Clamp](https://a.co/d/a8QMzio) and [Hooshing Wing Nuts](https://a.co/d/6t3cklL).
