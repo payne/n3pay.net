@@ -40,7 +40,5 @@ I'm able to attend my first NET with this setup and I think it might work great.
    1. [Windows Software Downloads](http://download.remotehams.com/)
    1. http://download.remotehams.com/orb/RCForb_Client_Manual.pdf
 	 1. Their [online remote base (ORB) software](https://www.remotehams.com/assets/pdfs/ORB_Control_Manual.pdf) dates back to 2014.  Nice!
-
-
-
+1. Ham Radio 2.0 YouTube video [COMPLETE Remote Control of Your Hamshack!](https://youtu.be/Q9HOZ7hJ1fM?si=dbpTNQjNNSOd6e8Y) talks about [Station Controller from Sierra Radio Systems](https://www.packtenna.com/station-controller.html#/)
 
