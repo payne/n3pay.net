@@ -32,3 +32,15 @@ I'm able to attend my first NET with this setup and I think it might work great.
 ![Note vDelay was too low here](rr1.png)
 
 
+### Random References about Remote Radio
+1. [ARRL notes on Remote Radio](https://www.arrl.org/link-remote-control)
+1. [RemoteRadio.com is a for pay service](https://www.remotehamradio.com/#pricing)
+1. [Richard WB9CSP](https://www.qrz.com/db/WB9CSP) does some remote operating.  Sent him an email asking about it.  https://wb9csp.de/ used Remote Hams
+1. [RemoteHams.com](https://remotehams.com/) is free!
+   1. [Windows Software Downloads](http://download.remotehams.com/)
+   1. http://download.remotehams.com/orb/RCForb_Client_Manual.pdf
+	 1. Their [online remote base (ORB) software](https://www.remotehams.com/assets/pdfs/ORB_Control_Manual.pdf) dates back to 2014.  Nice!
+
+
+
+
