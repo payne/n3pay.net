@@ -12,20 +12,20 @@ tags:
 
 # 2025 December 30 Notes for UNO HAM Radio
 
-I'm excited to be included in a planning meeting on 12/30/2025 and this is my read ahead suggestion.  I'll also update this after the meeting as needed.  
+I'm excited to be included in a planning meeting on 12/30/2025 and this is my read ahead suggestion.  I'll also update this after the meeting as needed.
 
-Last update 12/30/2025 at 9:15 AM Omaha time.
+Last update 12/30/2025 at 13:45 PM Omaha time.
 
 A quick table of contents is:
 
-1. Introduction  
-2. Clubs  
-3. NETs  
-4. People  
-5. Classes  
-6. Online testing  
-7. In person testing  
-8. Equipment 
+1. Introduction
+2. Clubs
+3. NETs
+4. People
+5. Classes
+6. Online testing
+7. In person testing
+8. Equipment
 
 ## Introduction
 
@@ -35,33 +35,33 @@ This post is my view on the local HAM radio community with an eye towards helpin
 
 ## Clubs
 
-1. AARC \-- [https://www.aksarbenarc.org/home/](https://www.aksarbenarc.org/home/) meets in the Red Cross building at 2912 South 80th Street on the second Friday of most months.  Meetings start at 7 pm and technical programs typically start about 7:30 or 8 pm.  
-2. BARC \-- [http://www.bellevuearc.org/](http://www.bellevuearc.org/) meets in Masonic Lodge dining Hall (1910 Franklin Street, Bellevue, NE) at 7:30pm on the third Thursday of most months.  Technical programs typically start at about 8pm.  
-   1. I strongly recommend that folks join [the BARC groups.io](https://bellevuearc.groups.io/g/main) because it’s a great place to ask questions.  
+1. AARC \-- [https://www.aksarbenarc.org/home/](https://www.aksarbenarc.org/home/) meets in the Red Cross building at 2912 South 80th Street on the second Friday of most months.  Meetings start at 7 pm and technical programs typically start about 7:30 or 8 pm.
+2. BARC \-- [http://www.bellevuearc.org/](http://www.bellevuearc.org/) meets in Masonic Lodge dining Hall (1910 Franklin Street, Bellevue, NE) at 7:30pm on the third Thursday of most months.  Technical programs typically start at about 8pm.
+   1. I strongly recommend that folks join [the BARC groups.io](https://bellevuearc.groups.io/g/main) because it’s a great place to ask questions.
    1. The 15 January 2026 meeting will be about building antennas.  Please talk with me (or on groups.io) about what you want to build so BARC can set you up for success on 15 January 2026.
-3. SWIARC \-- [http://SWIradio.org/](http://SWIradio.org/) \-- no technical programs.  
+3. SWIARC \-- [http://SWIradio.org/](http://SWIradio.org/) \-- no technical programs.
 4. The [Nebraska Radio Operators discord](https://discord.gg/A5n6AV8G) is a welcoming and technically rich community.
 
-## NETs 
+## NETs
 
 NETs are a great way to have fun on the radio.  Local repeaters can be frustratinly quiet.  Please refer to [this post about local NETs](https://n3pay.net/blog/NETs2025Sept/).
 
 ## People
 
-1. David [KC0IZT](https://www.qrz.com/db/KC0IZT) \-- Greg KC0VTO writes that David “would like to assist with the new formation of the UNO Amateur Radio Program. David is our ARES Meteorologist and has been an Amateur Radio Operator for 25 plus years.” his email address is  [dppares@outlook.com](mailto:dppares@outlook.com)   
-2. Dudley KD0NMD \-- Wonderful guy\!  Planning on gifting equipment to first newly licensed HAM from the UNO HAM Radio Club. He offers “an older but perfect 200w Kenwood TS 420S we will provide as  long-term loan.  I will donate a wire antenna (G5RV I think).”  Dudley is willing to demonstrate on campus (Dudley retired in 2025 and is a great speaker).  On [18 April 2025 Dudley arranged for radio demonstrations at UNO (photos in this groups.IO post](https://bellevuearc.groups.io/g/main/message/7103?p=%2C%2C%2C20%2C0%2C0%2C0%3A%3Acreated%2C%2CHam+Radio+Open+House%2C20%2C2%2C0%2C112341736)).  It seems to me that Dudley is constantly recruiting people to volunteer for Boy Scouts ([Scouting.org](http://Scouting.org))  related events.  Currently he is promoting [3 Jan 2026 Kids Day on the Air](https://bellevuearc.groups.io/g/main/message/7890).  
-3. Greg KC0VTO \-- ARRL ARES Emergency Coordinator, Douglas County  
+1. David [KC0IZT](https://www.qrz.com/db/KC0IZT) \-- Greg KC0VTO writes that David “would like to assist with the new formation of the UNO Amateur Radio Program. David is our ARES Meteorologist and has been an Amateur Radio Operator for 25 plus years.” his email address is  [dppares@outlook.com](mailto:dppares@outlook.com)
+2. Dudley KD0NMD \-- Wonderful guy\!  Planning on gifting equipment to first newly licensed HAM from the UNO HAM Radio Club. He offers “an older but perfect 200w Kenwood TS 420S we will provide as  long-term loan.  I will donate a wire antenna (G5RV I think).”  Dudley is willing to demonstrate on campus (Dudley retired in 2025 and is a great speaker).  On [18 April 2025 Dudley arranged for radio demonstrations at UNO (photos in this groups.IO post](https://bellevuearc.groups.io/g/main/message/7103?p=%2C%2C%2C20%2C0%2C0%2C0%3A%3Acreated%2C%2CHam+Radio+Open+House%2C20%2C2%2C0%2C112341736)).  It seems to me that Dudley is constantly recruiting people to volunteer for Boy Scouts ([Scouting.org](http://Scouting.org))  related events.  Currently he is promoting [3 Jan 2026 Kids Day on the Air](https://bellevuearc.groups.io/g/main/message/7890).
+3. Greg KC0VTO \-- ARRL ARES Emergency Coordinator, Douglas County
 4. Tim KF0TMZ is a recent graduate of UNL.edu where he is now working fulll time in software engineering.  Tim lives in Omaha and knows a lot about the UNL.edu HAM Radio club, the lincoln ham radio club, and is active in AARC in Omaha.
-   
+
 
 There are tons of other folks.  I recommend engaging with David and Dudley because they have both expressed interest.  Greg is gearing up some nice training that folks might enjoy.  If someone is interested in a topic (DX, mesh, DMR, IoT, etc), I’m happy to try and connect them with local hams.
 
 Presentations by students are the best.  Lighting talks are a great format.  And there are lots of local HAMs who would give presentations.  Examples include:
 
-1. Aaron KC0WIH \-- Radios & Linux talk first given 10/10/2025.  It’s a great talk.  
-2. George KC0HYI \-- DMR talk given on 11/14/2025 is considered AARC’s best talk of 2025\.  George is a full time UNO staff member in information technology services  
-3. Matt N3PAY \-- Talking about the future of HAM radio talk given on 1/15/2026 will talk about HAMSci.org,  [ARCD.net](http://ARCD.net)’s grant program, ARRL Teachers Institute, Digital voice, and other things.    
-   1. I’m also developing a talk about fun things to do with an RTL-SDR.  It would be much **better to just give an RTL-SDR to a student and help them develop a talk about it**.    
+1. Aaron KC0WIH \-- Radios & Linux talk first given 10/10/2025.  It’s a great talk.
+2. George KC0HYI \-- DMR talk given on 11/14/2025 is considered AARC’s best talk of 2025\.  George is a full time UNO staff member in information technology services
+3. Matt N3PAY \-- Talking about the future of HAM radio talk given on 1/15/2026 will talk about HAMSci.org,  [ARCD.net](http://ARCD.net)’s grant program, ARRL Teachers Institute, Digital voice, and other things.
+   1. I’m also developing a talk about fun things to do with an RTL-SDR.  It would be much **better to just give an RTL-SDR to a student and help them develop a talk about it**.
 4. Fox Hunting (radio direction finding) might make for a very fun meeting in the spring.  The local ham radio community has equipment and can help with this.
 
 ## Classes
@@ -74,7 +74,7 @@ It’s very likely folks will be happy to volunteer to teach a license class at 
 
 ## Online Testing
 
-Online testing requires an austere room and two cameras: typically a cell phone pointed at the keyboard and a laptop’s web camera pointed at the test taker.  Perhaps UNO could provide a space for students to take exams online?  
+Online testing requires an austere room and two cameras: typically a cell phone pointed at the keyboard and a laptop’s web camera pointed at the test taker.  Perhaps UNO could provide a space for students to take exams online?
 
 ## In person testing
 
