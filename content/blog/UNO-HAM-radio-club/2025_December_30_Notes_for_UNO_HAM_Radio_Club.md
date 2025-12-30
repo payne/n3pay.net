@@ -60,7 +60,7 @@ Presentations by students are the best.  Lighting talks are a great format.  And
 
 1. Aaron KC0WIH \-- Radios & Linux talk first given 10/10/2025.  It’s a great talk.
 2. George KC0HYI \-- DMR talk given on 11/14/2025 is considered AARC’s best talk of 2025\.  George is a full time UNO staff member in information technology services
-3. Matt N3PAY \-- Talking about the future of HAM radio talk given on 1/15/2026 will talk about HAMSci.org,  [ARCD.net](http://ARCD.net)’s grant program, ARRL Teachers Institute, Digital voice, and other things.
+3. Matt N3PAY \-- Talking about the future of HAM radio talk given on 1/15/2026 will talk about HAMSci.org,  [ARDC.net](http://ARDC.net)’s grant program, ARRL Teachers Institute, Digital voice, and other things.
    1. I’m also developing a talk about fun things to do with an RTL-SDR.  It would be much **better to just give an RTL-SDR to a student and help them develop a talk about it**.
 4. Fox Hunting (radio direction finding) might make for a very fun meeting in the spring.  The local ham radio community has equipment and can help with this.
 
