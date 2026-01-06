@@ -15,7 +15,11 @@ Meetings are open to the public and are held at 7:30pm on the third Thursday of 
 
 ### Next Meeting's educational program is:
 
-At the upcoming meeting on  Thursday 10/16/2025 the program will be a presentation and chat about DMR radio.
+At the upcoming meeting on  Thursday 1/15/2026 the program will be antenna building!
+
+## Upcoming Events
+
+Free technician ham radio class starts 10 January 2026: details at [https://bellevuearc.net/](https://bellevuearc.net/).
 
 
 ## Communication
@@ -25,5 +29,5 @@ At the upcoming meeting on  Thursday 10/16/2025 the program will be a presentati
 
 Please email N3PAY@ARRL.net if you have questions.
 
-*Last update: 2025 October 9*
+*Last update: 2026 January 5*
 

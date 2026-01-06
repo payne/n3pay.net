@@ -12,7 +12,7 @@ The [Omaha's Aksarben Amateur Radio Club (AARC)](https://www.aksarbenarc.org/hom
 
 Meetings are open to the public and are held on the second Friday of most months at the [American Red Cross, 2912 S 80th Ave](https://maps.app.goo.gl/BPFFG4Qcaq1cBQV76). Park and enter on the west side of the building. Meetings start at 7 pm.
 
-### Next meeting October 10, 2025 Topic: Radio with Linux Speaker: Aaron KC0WIH
+### Next meeting January 9, 2025 Topic: The Future of HAM radio speaker Matt N3PAY
 
 | When | Speaker | Topic | Notes|
 |------|---------|-------|------|
@@ -27,9 +27,6 @@ Meetings are open to the public and are held on the second Friday of most months
 2. Meeting minutes for each board meeting are published
 
 ## Upcoming Events
-1. [Market to Market Relay](https://www.markettomarketrelay.com/locations/nebraska/) -- Saturday 11 October 2025 needs 15 to 20 volunteers.
-	* [More details on AksarbenARC.org](https://www.aksarbenarc.org/home/)
-	* [Sign up to help](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__ocIpFhUQ0NYS05KOFhKQUw2R1dBNVhWQ0pSNDVDSy4u)
 
 ## Communication
 
@@ -38,4 +35,4 @@ Meetings are open to the public and are held on the second Friday of most months
 
 Please email N3PAY@ARRL.net if you have questions.
 
-*Last update: 2025 September 15*
+*Last update: 2026 January 5*
