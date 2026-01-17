@@ -1,8 +1,8 @@
 ---
-title: "4.4 Notes for class 17 Jan 2026"
+title: "Notes for class 17 Jan 2026"
 description: "Hopefully these notes will be handy."
 date: "2026-01-17"
-slug: "/posts/4p4class17Jan2026"
+slug: "/posts/class17Jan2026"
 tags:
   - "community"
   - "class"
