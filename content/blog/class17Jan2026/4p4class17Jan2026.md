@@ -77,3 +77,51 @@ You can use such a visualization to reinforce the specific examples found in you
 2.  **Band Identification:** You can relate the visual to the text's example that the 6-meter band (50 MHz) has a long wave, whereas the 2-meter band (144 MHz) has a much shorter wave.
 3.  **Antenna Size:** This visualizes why a 1/2 wave dipole for 40 meters (7 MHz) is physically much larger (approx. 66 feet) than a 1/2 wave dipole for 2 meters (approx. 19 inches).
 
+
+## [Section 5.4 Power Supplies and Batteries (slides 91-104)](https://docs.google.com/presentation/d/1xuf_okXuAKeP1ye0plIB5KQ6RnZchDMr/edit?usp=drive_link&ouid=108548111496505693673&rtpof=true&sd=true)
+
+
+Question: "Generate a table of all the terms used in Tech Module 5 section 4 (that's slides 91 through 104) of the Tech Module 5 PDF file."
+
+Here is the table of terms used in **Section 5.4: Power Supplies and Batteries** (slides 91 through 104) of the Tech Module 5 PDF.
+
+| Term | Definition / Key Characteristics | Source |
+| :--- | :--- | :--- |
+| **Power Supply** | A device that converts AC input power to DC current for radio equipment. Ratings include output voltage and continuous current supply capabilities. | |
+| **13.8 Volts** | The standard operating voltage for most mobile HF, VHF, and UHF transceivers (simulating a vehicle's electrical system while running). |, |
+| **Regulated Power Supply** | A power supply that uses a circuit to minimize voltage changes (sag) as the amount of current drawn by the radio changes. |, |
+| **Voltage Drop** | A reduction in voltage at the radio caused by resistance in the power wires ($V = I \times R$). It is minimized by using short, heavy-gauge wire. |, |
+| **Fuse** | A safety device used to prevent overheating and fire. In mobile installations, fuses should be placed in both the positive and negative leads. | |
+| **Grommet** | A protective ring used to protect wiring from chafing or rubbing against exposed metal in vehicle installations. | |
+| **Battery** | An electrochemical power source made up of one or more cells. | |
+| **Ampere-hours (Ah)** | The energy rating unit for a battery. It is used to calculate operating time (Capacity in Ah / Current Draw in Amps = Hours). |, |
+| **Storage Battery** | Large rechargeable batteries (typically lead-acid) used for emergency power. They contain strong acids and can release flammable hydrogen gas. | |
+| **Lead-acid** | A common rechargeable battery chemistry used in storage batteries. |, |
+| **Nickel-Metal Hydride (NiMH)** | A common type of rechargeable consumer battery (e.g., AA, AAA). |, |
+| **Lithium-ion (Li-ion)** | A rechargeable battery chemistry commonly used in battery packs. |, |
+| **Nickel-Cadmium (NiCd)** | A rechargeable battery chemistry. |, |
+| **Carbon-Zinc** | A disposable (non-rechargeable) battery chemistry. |, |
+| **Alkaline** | A common disposable (non-rechargeable) battery chemistry. | |
+
+
+
+## [Section 6.4 Nets    (slides 53-78)](https://docs.google.com/presentation/d/1UvwOubWFCgXL1DvHo_qrGxJGr-8a2VXs/edit?usp=drive_link&ouid=108548111496505693673&rtpof=true&sd=true)
+
+Quetion: Generate a table of all the terms used in Tech Module 6 section 4 (that's slides 53 through 78) of the Tech Module 6 PDF file.
+
+Here is the table of terms found in **Section 6.4: Nets** and **Section 6.5: Communications for Public Service** (covering slides 53 through 78) of the Tech Module 6 PDF.
+
+| Term | Definition / Key Characteristics | Source |
+| :--- | :--- | :--- |
+| **Net Control Station (NCS)** | The station that calls the net to order and directs communications between all stations checking in. | |
+| **Emergency Traffic** | Messages regarding life safety or property protection. A station with emergency traffic should break in at any time. | |
+| **Radiogram** | The formal format used for messages exchanged on a net to ensure accuracy. | |
+| **Preamble (Header)** | The first part of a radiogram containing information needed to handle and track the message (includes number, precedence, station of origin, etc.). |, |
+| **Check** | A count of the number of words and word equivalents in the text portion of the radiogram. It is used to verify the message was received correctly. |, |
+| **Phonetics** | A standard alphabet (e.g., Alpha, Bravo) used to spell out names or unusual words to ensure accuracy during voice transmission. |, |
+| **Traffic** | The term used to refer to messages passed between stations in a net. | |
+| **Station of Origin** | The call sign of the sending station that creates the radiogram. | |
+| **Precedence** | A description of the nature or urgency of the radiogram (e.g., Emergency, Priority, Welfare). | |
+| **ARES** | **Amateur Radio Emergency Service**. A group of licensed amateurs who have voluntarily registered their qualifications and equipment for public service duty. It is sponsored by the ARRL. | |
+| **RACES** | **Radio Amateur Civil Emergency Service**. A special part of FCC Part 97 Amateur Service providing civil defense communications during national emergencies. | |
+
