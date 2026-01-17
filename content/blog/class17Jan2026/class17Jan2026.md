@@ -17,3 +17,11 @@ tags:
 1. [Cute Radio Wave Simulation](https://phet.colorado.edu/sims/cheerpj/radio-waves/latest/radio-waves.html?simulation=radio-waves)
 
 
+## Matt N3PAY's bits
+1. Section 4.4 Practical Antenna Systems     (slides 77-119)
+1. Section 5.4 Power Supplies and Batteries (slides 91-104)
+1. Section 6.4 Nets    (slides 53-78)
+
+
+## Section 4.4 Practical Antenna Systems     (slides 77-119)
+
