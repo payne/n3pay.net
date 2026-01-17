@@ -38,6 +38,19 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
+	
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
 	</head>
 	<body>
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
