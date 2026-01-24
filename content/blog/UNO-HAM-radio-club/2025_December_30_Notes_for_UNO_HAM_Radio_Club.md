@@ -2,6 +2,7 @@
 title: "UNO HAM Radio Club support"
 description: "Let's all help folks at UNOmaha.edu have a HAM radio club."
 date: "2025-12-30"
+draft: true
 slug: "/posts/UNOHamRadioClub1"
 tags:
   - "community"
