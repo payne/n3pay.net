@@ -16,6 +16,8 @@ const numberOfLatestPostsToShow = 3;
 * <a href=https://etherham.com/>EtherHAM</a>
 </p>
 
+Motto I like is "Learn, Teach, Serve" it's from https://kl7aa.org/about/
+
 <h2>Here are my Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
