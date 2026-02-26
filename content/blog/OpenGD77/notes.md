@@ -1,7 +1,7 @@
 ---
 title: "WIP: Flashing OpenGD77 to DM-1701 radio"
 description: "IOU better notes on OpenGD77 flash to DM-1701 radio"
-date: "2025-11-01"
+date: "2026-02-22"
 slug: "/posts/openGD77-1"
 tags:
   - "DMR"
