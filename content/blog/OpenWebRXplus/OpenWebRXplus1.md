@@ -4,8 +4,8 @@ description: "An instnace of OpenWebRX+"
 date: "2026-02-03"
 slug: "/posts/openWebRXplus"
 tags:
-  - "vhf"
-  - "sdr"
+  - "VHF"
+  - "SDR"
   - "Omaha"
 ---
 
