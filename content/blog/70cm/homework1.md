@@ -2,7 +2,7 @@
 title: "70 cm curiosities"
 description: "I want to learn what all this stuff is..."
 date: "2026-03-28"
-slug: "/posts/70cm1
+slug: "/posts/70cm1"
 tags:
   - "70cm"
   - "homework"
