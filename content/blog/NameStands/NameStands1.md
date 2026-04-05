@@ -15,11 +15,9 @@ Name stands went well at the recent [BARC](https://bellevuearc.net/) meeting.  M
 
 [Here's my list of name stands](https://docs.google.com/spreadsheets/d/1ig9mP-3f7goJ_LoyRzh423UxTYB0BbhEU-M-GI-eGKA/edit?usp=sharing).  If you're not on the list, would you please send me an email with your call sign?  Thanks.
 
-My email is [Matt.N3PAY@gmail.com](mailto:Matt.N3PAY@gmail.com).
+My email is Matt.N3PAY@gmail.com.
 
 Here's an "action" shot of a name stand:
-![Poppy does not have a name stand](NameStand.heic)
 
-
-
+![Poppy does not have a name stand](NameStand.png)
 
