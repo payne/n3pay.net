@@ -13,11 +13,11 @@ This is an Eleventy-based static site blog built from the eleventy-base-blog v9 
 - **Output Directory**: `_site/` - generated static files
 - **Template Engine**: Nunjucks (for .html and .md files)
 - **Content Structure**:
-  - Blog posts: `content/blog/` with `posts` tag
+  - Blog posts: `content/blog/` with `posts` tag (can use subdirectories like `content/blog/MyPost/mypost.md`)
   - Pages: `content/` (index, about, 404, etc.)
   - Data: `_data/` directory with global site data
   - Templates: `_includes/layouts/` (base, home, post)
-  - Static assets: `public/` copied to output root
+  - CSS: `css/` directory at root (included via base layout)
 
 ## Development Commands
 
@@ -38,7 +38,9 @@ This is an Eleventy-based static site blog built from the eleventy-base-blog v9 
 - **Drafts**: Use `draft: true` in front matter - visible in development, excluded from production builds
 - **Navigation**: Use `eleventyNavigation` key in front matter for site navigation
 - **Tags**: Blog posts use tags for categorization, automatically generates tag pages
-- **Images**: Automatic optimization with multiple formats (AVIF, WebP, fallback)
+- **Images**: Automatic optimization with multiple formats (AVIF, WebP, fallback); images can be co-located with blog posts
+- **MathJax**: Enabled for math rendering using `$...$` or `\(...\)` for inline math
+- **Data Cascade**: `*.11tydata.js` files apply settings to all files in their directory (e.g., `content/blog/blog.11tydata.js` auto-applies `posts` tag and `post.njk` layout)
 
 ## Template Structure
 
