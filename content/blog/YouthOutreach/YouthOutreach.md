@@ -101,4 +101,9 @@ The RF engineering talent shortage isn't going away. The industries driving our 
 
 ---
 
+NOTE: The post above was entirely written by Claude code.  Here's the prompt I used.  Note: I'm a terrible speller (my Mom tried).
+
+> Create a blog post about youth outreach in the ham radio community.  Include information about ARRL Teachers Institue, ARDC's scholarship hub, ARRL list of scholarships, and https://www.zeroretries.org/p/zero-retries-0249 coverage of the essay "The Quiet Resurgence of RF Engineering" by Anthony Templeton.  Include calls to action for families to encouage all students, especially those inclined towards STEAM to try HAM radio both for fun and as a strategic investment in a future carrer.
+
 *73 de N3PAY*
+
