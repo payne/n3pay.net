@@ -1,0 +1,25 @@
+*** Connected to Winlink RMS: AL0R-8 @ 2026/05/10 22:27:35  Freq: 145.070
+[WL2K-5.0-B2FWIHJM$]
+;PQ: 80673521
+CMS via AL0R >
+   ;FW: N3PAY
+   [RMS Express-1.7.31.0-B2FHM$]
+
+   ;PR: 92302847
+   ; AL0R-8 DE N3PAY (EN11WF)
+   FC EM HA2NHD4QISEN 597 452 0
+   F> 7F
+FS Y
+*** Sending HA2NHD4QISEN.
+FF
+*** Completed send of message HA2NHD4QISEN
+*** Sent 1 message.  Bytes: 479,  Time: 00:12,  bytes/minute: 2283
+   FQ
+*** Disconnected from Winlink RMS: AL0R-8 @ 2026/05/10 22:28:02
+*** Session: 0.5 min;  Avg Throughput: 1326 Bytes/min;   1 Min Peak Throughput: 1326 Bytes/min
+*** --- End of session with AL0R-8 at 2026/05/10 22:28:02 ---
+*** Messages sent: 1.  Total bytes sent: 479,  Time: 00:27,  bytes/minute: 1062
+*** Messages Received: 0.  Total bytes received: 0,  Total session time: 00:27,  bytes/minute: 0
+*** Disconnecting
+
+
