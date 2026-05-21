@@ -14,6 +14,8 @@ Thanks to [Ham and Cheese on YouTube](https://www.youtube.com/@hamandcheese25) f
 
 I'll be testing it with my Kindle Fire HD 8 tablet and will report back with my experience.
 
+REPORT: Was able to transmit!  More details later.  Here is a sample of [the audio as recieved by my RTL-SDR](rec.mp3).  And what [my OpenWebRX+](https://1.AppFarms.org) looked like when receiving.
+![alt text](rec.png)
 
 p.s. I vibe code this post like so:
 
