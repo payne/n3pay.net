@@ -4,7 +4,7 @@
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
-/* Theme colors */
+/* Theme colors - Light mode default */
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
@@ -20,19 +20,46 @@
 	--syntax-tab-size: 2;
 }
 
+/* Dark mode - system preference */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;
 
-		/* --text-color is assigned to --color-gray-_ above */
 		--text-color-link: #1493fb;
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
 	}
+}
+
+/* Dark mode - manual override */
+:root[data-theme="dark"] {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color-link: #1493fb;
+	--text-color-link-active: #6969f7;
+	--text-color-link-visited: #a6a6f8;
+
+	--background-color: #15202b;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+	background: none;
+	border: 1px solid var(--color-gray-50);
+	border-radius: 4px;
+	padding: 0.25rem 0.5rem;
+	cursor: pointer;
+	color: var(--text-color);
+	font-size: 1rem;
+}
+.theme-toggle:hover {
+	border-color: var(--text-color);
 }
 
 
@@ -287,12 +314,18 @@ header {
 }
 
 @media (prefers-color-scheme: dark) {
-	.post-card-tags .post-tag {
+	:root:not([data-theme="light"]) .post-card-tags .post-tag {
 		background: rgba(255, 255, 255, 0.1);
 	}
-	.post-card-tags .post-tag:hover {
+	:root:not([data-theme="light"]) .post-card-tags .post-tag:hover {
 		background: rgba(255, 255, 255, 0.2);
 	}
+}
+:root[data-theme="dark"] .post-card-tags .post-tag {
+	background: rgba(255, 255, 255, 0.1);
+}
+:root[data-theme="dark"] .post-card-tags .post-tag:hover {
+	background: rgba(255, 255, 255, 0.2);
 }
 
 .post-card-title {

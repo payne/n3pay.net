@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
 	<head>
+		<script>
+			(function() {
+				const saved = localStorage.getItem('theme');
+				if (saved) document.documentElement.setAttribute('data-theme', saved);
+			})();
+		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
@@ -67,6 +73,10 @@
 				{%- endfor %}
 				</ul>
 			</nav>
+			<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+				<span class="theme-toggle-light">Light</span>
+				<span class="theme-toggle-dark">Dark</span>
+			</button>
 		</header>
 
 		<main id="main">
@@ -83,5 +93,46 @@
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+		<script>
+			(function() {
+				const toggle = document.getElementById('theme-toggle');
+				const root = document.documentElement;
+
+				// Get saved theme or default to 'auto'
+				const savedTheme = localStorage.getItem('theme') || 'auto';
+				if (savedTheme !== 'auto') {
+					root.setAttribute('data-theme', savedTheme);
+				}
+				updateToggleText();
+
+				toggle.addEventListener('click', function() {
+					const current = root.getAttribute('data-theme');
+					const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+					let newTheme;
+					if (!current) {
+						// Currently auto - switch to opposite of system
+						newTheme = prefersDark ? 'light' : 'dark';
+					} else if (current === 'dark') {
+						newTheme = 'light';
+					} else {
+						newTheme = 'dark';
+					}
+
+					root.setAttribute('data-theme', newTheme);
+					localStorage.setItem('theme', newTheme);
+					updateToggleText();
+				});
+
+				function updateToggleText() {
+					const current = root.getAttribute('data-theme');
+					const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					const isDark = current === 'dark' || (!current && prefersDark);
+
+					toggle.querySelector('.theme-toggle-light').style.display = isDark ? 'inline' : 'none';
+					toggle.querySelector('.theme-toggle-dark').style.display = isDark ? 'none' : 'inline';
+				}
+			})();
+		</script>
 	</body>
 </html>
