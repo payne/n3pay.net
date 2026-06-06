@@ -1,10 +1,12 @@
 ---
-title: "VHF reciever online"
-description: "An instnace of OpenWebRX+"
+title: "receiver online"
+description: "An instance of OpenWebRX+"
 date: "2026-02-03"
 slug: "/posts/openWebRXplus"
 tags:
   - "VHF"
+  - "UHF"
+  - "GMRS"
   - "SDR"
   - "Omaha"
 ---
