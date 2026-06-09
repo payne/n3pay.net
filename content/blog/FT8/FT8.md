@@ -1,7 +1,7 @@
 ---
 title: "I ❤️ FT8"
 description: "New to FT8 and loving the digital mode experience with SmartSDR on Mac"
-date: "2026-05-24"
+date: "2026-06-08"
 tags:
   - "FT8"
   - "Digital Modes"
@@ -9,6 +9,10 @@ tags:
 ---
 
 I'm new to FT8 and I'm really enjoying it!
+
+<a href="https://github.com/payne/myQRZlogs">My QSO logs have been growing
+   <img src="https://github.com/payne/myQRZlogs/raw/main/qso_graph.png">
+</a>
 
 I've been using [SmartSDR](https://documents.roskosch.de/smartsdr-mac/index.html#document-02_tool_ft8) on my M1 Mac Mini and it's been a great experience. The integration is smooth and makes getting on the air with FT8 straightforward.
 
