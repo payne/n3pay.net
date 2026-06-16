@@ -1,3 +1,3 @@
 export default {
-	showPicofoxBanner: true
+	showPicofoxBanner: false
 }
