@@ -1,6 +1,6 @@
 ---
 title: Starting to use RagChew.site
-date: 2025-06-17
+date: 2026-06-17
 tags:
   - NETs
   - logs
