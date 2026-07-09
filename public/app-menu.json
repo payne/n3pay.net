@@ -1,0 +1,23 @@
+[
+  {
+    "url": "/blog/",
+    "title": "blog",
+    "description": "notes about things Matt N3PAY finds noteworthy",
+    "notes": "this has an RSS feed",
+    "last-updated": ""
+  },
+  {
+    "url": "https://payne.github.io/ad",
+    "title": "attendance database",
+    "description": "lets one look up folks with just part of their call or name",
+    "notes": "",
+    "last-updated": "10/6/2025 at 1:31 GMT"
+  },
+  {
+    "url": "https://payne.github.io/Bookmarklets/",
+    "title": "bookmarklets that are handy",
+    "description": "one from pinboard.in and the rest vibe coded",
+    "notes": "laser pointer and labels are some of N3PAY's favorites",
+    "last-updated": "6/17/2026"
+  }
+]

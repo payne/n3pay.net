@@ -3,55 +3,311 @@ const eleventyNavigation = {
 	key: "Home",
 	order: 1
 };
-
-const numberOfLatestPostsToShow = 20;
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<h1>Matt N3PAY's Applications</h1>
+<p class="app-menu-intro">A collection of small applications and tools. Use the <strong>Launch</strong> button to open one in a new window. Sort by any column, filter with the search box, and choose which columns to show.</p>
 
-<h2>Hi! &#128075; I'm Matt, <a href=https://www.qrz.com/db/N3PAY>N3PAY</a>.
-I'm excited to learn things & make friends via the hobby of amateur
-radio &#x1F4FB; </h2>
+<div id="app-menu">
+	<noscript>
+		<ul class="app-menu-noscript">
+		{%- for app in appMenu %}
+			<li><a href="{{ app.url }}">{{ app.title }}</a>{% if app.description %} &mdash; {{ app.description }}{% endif %}{% if app['last-updated'] %} <em>(updated {{ app['last-updated'] }})</em>{% endif %}</li>
+		{%- endfor %}
+		</ul>
+	</noscript>
+</div>
 
-{% if settings.showPicofoxBanner %}
-<a href="https://fox.N3PAY.net" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem; text-decoration: none;">
-  <img src="blog/PicoFOX/PicoFOX.png" alt="PicoFOX" style="width: 100px; height: 100px; flex-shrink: 0;">
-  <span style="font-size: 1.5em; font-weight: bold; text-align: center;">Information about the PicoFOX I bought from AI6YM.</span>
-  <img src="blog/PicoFOX/fox.png" alt="fox logo" style="max-width: 100px; height: auto; flex-shrink: 0;">
-</a>
-{% endif %}
+<script type="application/json" id="app-menu-data" eleventy:ignore>{{ appMenu | dump | safe }}</script>
 
+{% css %}
+.app-menu-intro { margin-bottom: 1rem; }
+.app-menu-controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: flex-start;
+	margin: 1rem 0;
+}
+.app-menu-filter { display: inline-flex; align-items: center; gap: 0.4rem; }
+.app-menu-filter input {
+	padding: 0.35rem 0.5rem;
+	border: 1px solid var(--color-gray-50);
+	border-radius: 4px;
+	background: var(--background-color);
+	color: var(--text-color);
+	font-size: 1rem;
+	min-width: 14rem;
+}
+.app-menu-columns summary {
+	cursor: pointer;
+	border: 1px solid var(--color-gray-50);
+	border-radius: 4px;
+	padding: 0.4rem 0.6rem;
+	display: inline-block;
+	list-style: none;
+	user-select: none;
+}
+.app-menu-columns summary::-webkit-details-marker { display: none; }
+.app-menu-columns summary::before { content: "\25BE\00a0"; }
+.app-menu-column-list {
+	margin-top: 0.4rem;
+	padding: 0.5rem 0.7rem;
+	border: 1px solid var(--color-gray-50);
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	background: var(--background-color);
+}
+.app-menu-column-list label { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+.app-menu-table-wrap { overflow-x: auto; }
+.app-menu-table { border-collapse: collapse; width: 100%; }
+.app-menu-table th,
+.app-menu-table td {
+	text-align: left;
+	padding: 0.5rem 0.75rem;
+	border-bottom: 1px solid var(--color-gray-20);
+	vertical-align: top;
+}
+.app-menu-table th { white-space: nowrap; }
+.app-menu-table td.col-last-updated { white-space: nowrap; }
+.sort-btn {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	font-weight: bold;
+	color: var(--text-color);
+	cursor: pointer;
+}
+.sort-btn:hover { color: var(--text-color-link); }
+.col-launch { width: 1%; white-space: nowrap; }
+.launch-btn {
+	display: inline-block;
+	padding: 0.3rem 0.7rem;
+	border: 1px solid var(--text-color-link);
+	border-radius: 4px;
+	color: var(--text-color-link);
+	text-decoration: none;
+	white-space: nowrap;
+}
+.launch-btn:hover { background: var(--text-color-link); color: var(--background-color); }
+.app-menu-empty { font-style: italic; }
+{% endcss %}
 
-<p>
-* <a href=https://daily.hamweekly.com/>Amateur Radio Daily</a>
-* <a href=https://www.reddit.com/r/amateurradio/>Reddit</a>
-* <a href=https://etherham.com/>EtherHAM</a>
-* <a href=https://www.randomwire.us/>Random Wire</a>
-* <a href=https://www.zeroretries.radio/>Zero Retries</a>
-* <a href=https://openhamprep.com/>Open HAM Prep</a>
-</p>
+{% js %}
+(function () {
+	const container = document.getElementById("app-menu");
+	const dataEl = document.getElementById("app-menu-data");
+	if (!container || !dataEl) return;
 
-Motto I like is "Learn, Teach, Serve" it's from https://kl7aa.org/about/
+	let apps;
+	try {
+		apps = JSON.parse(dataEl.textContent);
+	} catch (e) {
+		return;
+	}
+	if (!Array.isArray(apps)) return;
 
-<h2>Here are my Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
+	const COLUMNS = [
+		{ key: "title", label: "Title", type: "text" },
+		{ key: "last-updated", label: "Last updated", type: "date" },
+		{ key: "description", label: "Description", type: "text" },
+		{ key: "notes", label: "Notes", type: "text" },
+		{ key: "url", label: "URL", type: "url" }
+	];
+	const DEFAULT_VISIBLE = ["title", "last-updated"];
+	const FILTER_KEYS = COLUMNS.map(c => c.key);
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+	const state = {
+		sortKey: "title",
+		sortDir: "asc",
+		filter: "",
+		visible: new Set(DEFAULT_VISIBLE)
+	};
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
-{% endif %}
+	function parseDate(s) {
+		if (!s) return null;
+		const d = String(s).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+		if (!d) return null;
+		const t = String(s).match(/(\d{1,2}):(\d{2})/);
+		const hh = t ? Number(t[1]) : 0;
+		const mm = t ? Number(t[2]) : 0;
+		return Date.UTC(Number(d[3]), Number(d[1]) - 1, Number(d[2]), hh, mm);
+	}
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+	function compare(a, b) {
+		const col = COLUMNS.find(c => c.key === state.sortKey);
+		const mul = state.sortDir === "asc" ? 1 : -1;
+		if (col && col.type === "date") {
+			const av = parseDate(a[col.key]);
+			const bv = parseDate(b[col.key]);
+			if (av === null && bv === null) return 0;
+			if (av === null) return 1;
+			if (bv === null) return -1;
+			return (av - bv) * mul;
+		}
+		const av = String(a[state.sortKey] || "").toLowerCase();
+		const bv = String(b[state.sortKey] || "").toLowerCase();
+		return av.localeCompare(bv) * mul;
+	}
 
-<a rel="me" href="https://mastodon.radio/@n3pay">Mastodon</a>
+	function matches(app) {
+		const q = state.filter.trim().toLowerCase();
+		if (!q) return true;
+		return FILTER_KEYS.some(k => String(app[k] || "").toLowerCase().indexOf(q) !== -1);
+	}
 
+	function visibleColumns() {
+		return COLUMNS.filter(c => state.visible.has(c.key));
+	}
+
+	// Build the static shell (controls + empty table) once.
+	const controls = document.createElement("div");
+	controls.className = "app-menu-controls";
+
+	const filterWrap = document.createElement("label");
+	filterWrap.className = "app-menu-filter";
+	filterWrap.appendChild(document.createTextNode("Filter: "));
+	const filterInput = document.createElement("input");
+	filterInput.type = "search";
+	filterInput.placeholder = "Type to filter…";
+	filterInput.setAttribute("aria-label", "Filter applications");
+	filterInput.addEventListener("input", function () {
+		state.filter = filterInput.value;
+		renderBody();
+	});
+	filterWrap.appendChild(filterInput);
+
+	const colWidget = document.createElement("details");
+	colWidget.className = "app-menu-columns";
+	const colSummary = document.createElement("summary");
+	colSummary.textContent = "Columns";
+	colWidget.appendChild(colSummary);
+	const colList = document.createElement("div");
+	colList.className = "app-menu-column-list";
+	COLUMNS.forEach(function (col) {
+		const lbl = document.createElement("label");
+		const cb = document.createElement("input");
+		cb.type = "checkbox";
+		cb.checked = state.visible.has(col.key);
+		cb.addEventListener("change", function () {
+			if (cb.checked) state.visible.add(col.key);
+			else state.visible.delete(col.key);
+			renderHead();
+			renderBody();
+		});
+		lbl.appendChild(cb);
+		lbl.appendChild(document.createTextNode(col.label));
+		colList.appendChild(lbl);
+	});
+	colWidget.appendChild(colList);
+
+	controls.appendChild(filterWrap);
+	controls.appendChild(colWidget);
+
+	const tableWrap = document.createElement("div");
+	tableWrap.className = "app-menu-table-wrap";
+	const table = document.createElement("table");
+	table.className = "app-menu-table";
+	const thead = document.createElement("thead");
+	const tbody = document.createElement("tbody");
+	table.appendChild(thead);
+	table.appendChild(tbody);
+	tableWrap.appendChild(table);
+
+	container.textContent = "";
+	container.appendChild(controls);
+	container.appendChild(tableWrap);
+
+	function renderHead() {
+		thead.textContent = "";
+		const tr = document.createElement("tr");
+		const launchTh = document.createElement("th");
+		launchTh.scope = "col";
+		launchTh.className = "col-launch";
+		launchTh.textContent = "Launch";
+		tr.appendChild(launchTh);
+		visibleColumns().forEach(function (col) {
+			const th = document.createElement("th");
+			th.scope = "col";
+			th.className = "col-" + col.key;
+			const btn = document.createElement("button");
+			btn.type = "button";
+			btn.className = "sort-btn";
+			let indicator = "";
+			if (state.sortKey === col.key) {
+				indicator = state.sortDir === "asc" ? " ▲" : " ▼";
+				th.setAttribute("aria-sort", state.sortDir === "asc" ? "ascending" : "descending");
+			} else {
+				th.setAttribute("aria-sort", "none");
+			}
+			btn.textContent = col.label + indicator;
+			btn.addEventListener("click", function () {
+				if (state.sortKey === col.key) {
+					state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+				} else {
+					state.sortKey = col.key;
+					state.sortDir = "asc";
+				}
+				renderHead();
+				renderBody();
+			});
+			th.appendChild(btn);
+			tr.appendChild(th);
+		});
+		thead.appendChild(tr);
+	}
+
+	function renderBody() {
+		tbody.textContent = "";
+		const cols = visibleColumns();
+		const rows = apps.filter(matches).slice().sort(compare);
+		if (rows.length === 0) {
+			const tr = document.createElement("tr");
+			const td = document.createElement("td");
+			td.colSpan = cols.length + 1;
+			td.className = "app-menu-empty";
+			td.textContent = "No applications match your filter.";
+			tr.appendChild(td);
+			tbody.appendChild(tr);
+			return;
+		}
+		rows.forEach(function (app) {
+			const tr = document.createElement("tr");
+			const launchTd = document.createElement("td");
+			launchTd.className = "col-launch";
+			const launch = document.createElement("a");
+			launch.className = "launch-btn";
+			launch.href = app.url || "#";
+			launch.target = "_blank";
+			launch.rel = "noopener noreferrer";
+			launch.textContent = "Launch ↗";
+			if (app.title) launch.setAttribute("aria-label", "Launch " + app.title + " in a new window");
+			launchTd.appendChild(launch);
+			tr.appendChild(launchTd);
+			cols.forEach(function (col) {
+				const td = document.createElement("td");
+				td.className = "col-" + col.key;
+				const val = app[col.key] || "";
+				if (col.type === "url" && val) {
+					const link = document.createElement("a");
+					link.href = val;
+					link.target = "_blank";
+					link.rel = "noopener noreferrer";
+					link.textContent = val;
+					td.appendChild(link);
+				} else {
+					td.textContent = val;
+				}
+				tr.appendChild(td);
+			});
+			tbody.appendChild(tr);
+		});
+	}
+
+	renderHead();
+	renderBody();
+})();
+{% endjs %}
