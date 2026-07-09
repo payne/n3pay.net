@@ -33,6 +33,8 @@ export default async function(eleventyConfig) {
 
 	// Watch CSS files
 	eleventyConfig.addWatchTarget("css/**/*.css");
+	// Watch the landing-page application list (read by _data/appMenu.js)
+	eleventyConfig.addWatchTarget("public/app-menu.json");
 	// Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 

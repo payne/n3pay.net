@@ -1,10 +1,47 @@
 ---js
 const eleventyNavigation = {
-	key: "Archive",
+	key: "Blog",
 	order: 2
 };
----
-<h1>Archive</h1>
 
-{% set postslist = collections.posts %}
+const numberOfLatestPostsToShow = 20;
+---
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+
+<h2>Hi! &#128075; I'm Matt, <a href=https://www.qrz.com/db/N3PAY>N3PAY</a>.
+I'm excited to learn things & make friends via the hobby of amateur
+radio &#x1F4FB; </h2>
+
+{% if settings.showPicofoxBanner %}
+<a href="https://fox.N3PAY.net" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem; text-decoration: none;">
+  <img src="/blog/PicoFOX/PicoFOX.png" alt="PicoFOX" style="width: 100px; height: 100px; flex-shrink: 0;">
+  <span style="font-size: 1.5em; font-weight: bold; text-align: center;">Information about the PicoFOX I bought from AI6YM.</span>
+  <img src="/blog/PicoFOX/fox.png" alt="fox logo" style="max-width: 100px; height: auto; flex-shrink: 0;">
+</a>
+{% endif %}
+
+
+<p>
+* <a href=https://daily.hamweekly.com/>Amateur Radio Daily</a>
+* <a href=https://www.reddit.com/r/amateurradio/>Reddit</a>
+* <a href=https://etherham.com/>EtherHAM</a>
+* <a href=https://www.randomwire.us/>Random Wire</a>
+* <a href=https://www.zeroretries.radio/>Zero Retries</a>
+* <a href=https://openhamprep.com/>Open HAM Prep</a>
+</p>
+
+Motto I like is "Learn, Teach, Serve" it's from https://kl7aa.org/about/
+
+<h2>Here are my Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
+
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
 {% include "postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/archive/">the archive</a>.</p>
+{% endif %}
+
+<a rel="me" href="https://mastodon.radio/@n3pay">Mastodon</a>
