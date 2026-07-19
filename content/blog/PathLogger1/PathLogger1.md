@@ -9,6 +9,8 @@ tags:
   - "Firebase"
 ---
 
+[https://n3pay-2b69c-pl1.web.app/](https://n3pay-2b69c-pl1.web.app/) is the temporary URL
+
 Simplex is where the interesting radio happens. No repeater, no linked system, just two stations and whatever the terrain and the antennas will allow. The part I kept wanting to keep track of was not the contact itself but the *path* — where I was, where the other station was, and whether that path worked again later.
 
 So I built Path Logger. Version 1 is deliberately small.
