@@ -1,5 +1,5 @@
 ---
-title: "Path Logger, Version 1"
+title: "Path Logger, Version 0.01"
 description: "A small Firebase app for logging simplex contacts and mapping the path between stations"
 date: "2026-07-18"
 tags:
@@ -13,7 +13,7 @@ tags:
 
 Simplex is where the interesting radio happens. No repeater, no linked system, just two stations and whatever the terrain and the antennas will allow. The part I kept wanting to keep track of was not the contact itself but the *path* — where I was, where the other station was, and whether that path worked again later.
 
-So I built Path Logger. Version 1 is deliberately small.
+So I built Path Logger. Version 0.01 is deliberately small.
 
 ## What it does
 
