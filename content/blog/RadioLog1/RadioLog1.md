@@ -1,3 +1,19 @@
+---
+title: "What is in my radio log?"
+description: "Output of some scripts shows where my contacts are happening."
+date: "2026-08-13"
+slug: "/posts/RadioLog1"
+tags:
+  - "logs"
+  - "coding"
+  - "DX"
+---
+
+Claude.ai created some easy to use python scripts that put my logs into SQLite. Once the contacts are in a real database, asking questions about them is just SQL instead of scrolling through a spreadsheet.
+
+One of the summaries that pleases me includes contacts outside of CONUS:
+
+```
 Confirmed QSOs outside the USA entity, by country (confirmation source: qsl_rcvd, lotw_qsl_rcvd, eqsl_qsl_rcvd, app_qrzlog_status)
 
 Country               QSOs  Stations
@@ -46,3 +62,6 @@ Ukraine                  1         1
 Wales                    1         1
 ------------------  ------  --------
 TOTAL                  161  42 country(s)
+```
+
+161 confirmed QSOs across 42 countries, with Canada and Japan leading the way. Angola sitting at 4 QSOs from a single station stands out too.
