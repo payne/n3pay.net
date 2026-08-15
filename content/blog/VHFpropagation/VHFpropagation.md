@@ -12,6 +12,8 @@ tags:
 
 Thanks to Jim KX0U for showing me [vhf.dxview.org](https://vhf.dxview.org/map?center=40.35,-95.23,7.0). It's a live map that colors the country by how far VHF signals are getting out right now — greens and yellows where things are normal, oranges and reds where the band is open. That's a great picture, but it left me wondering: where does that data actually come from? Nobody is out there with a signal generator sweeping the whole country every hour.
 
+![alt text](image.png)
+
 ## The trick: use the traffic that's already there
 
 The [VHF map](https://vhf.dxview.org/) doesn't run its own beacons. Instead it listens to a network that's already broadcasting all day long — [APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System), the Automatic Packet Reporting System.
