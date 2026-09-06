@@ -14,4 +14,11 @@ Last month [Aaron](https://www.grothe.us/presentations/) gave a talk on [Alterna
 
 ![screen grab from web viewer](image.png)
 
+### AIOC to used to install
 
+I'm happy to meet with you and use my AIOC to install the firmware on your radio.
+
+
+<a href="https://youtube.com/shorts/AsyAZbgDQwo?is=Qw4caHD_xKpirFJ6">
+
+  <img src="image-1.png" alt="AIOC install video thumbnail"/></a>
