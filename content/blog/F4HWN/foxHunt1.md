@@ -14,7 +14,7 @@ Last month [Aaron](https://www.grothe.us/presentations/) gave a talk on [Alterna
 
 ![screen grab from web viewer](image.png)
 
-### AIOC to used to install
+### <a href="https://na6d.com/products/aioc-ham-radio-all-in-one-cable">$33 AIOC</a> to used to install
 
 I'm happy to meet with you and use my AIOC to install the firmware on your radio.
 
