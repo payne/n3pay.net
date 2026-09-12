@@ -17,7 +17,7 @@ Here's some of the notes I took:
    1. Rust and JavaScript implementations also exist
 1. Reticulum protocol is public domain.
 1. [LXMF](https://github.com/markqvist/lxmf) is a related to Reticulum and allows a message to be contained in a QR code!
-
+   1. The [start](https://reticulum.network/start.html) page says "LXMF is a distributed, delay and disruption tolerant message transfer protocol built on Reticulum."
 
 Links from Guy's repo's readme include:
 1. [MeshChat](https://github.com/liamcottle/reticulum-meshchat) — A chat client and NomadNet browser for Reticulum.
