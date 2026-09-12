@@ -26,3 +26,8 @@ Links from Guy's repo's readme include:
 
 It was great to see live demostrations of this during Guy's KCDC 2026 talk.
 
+When I google: Reticulum hello world
+
+Google's AI says, do the pip and then try these two python programs:
+
+
