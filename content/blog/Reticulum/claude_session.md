@@ -1,3 +1,15 @@
+---
+title: "Claude Session Log"
+description: ""
+date: "2026-09-11"
+slug: "/posts/claude-session-log-reticulum"
+tags:
+  - "decentralized"
+  - "RF"
+  - "ethernet"
+draft: true
+---
+
 # Claude Session: LXMF QR Code Encode/Decode
 
 This documents the Claude Code session that produced `lxmf_qr.py` and `qr_lxmf.py`

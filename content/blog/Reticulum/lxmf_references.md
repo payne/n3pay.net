@@ -1,3 +1,15 @@
+---
+title: "LXMF references"
+description: ""
+date: "2026-09-11"
+slug: "/posts/lxmf-references-reticulum"
+tags:
+  - "decentralized"
+  - "RF"
+  - "ethernet"
+draft: false
+---
+
 # LXMF References
 
 Reading list gathered while building `lxmf_qr.py` / `qr_lxmf.py`, with a focus on
