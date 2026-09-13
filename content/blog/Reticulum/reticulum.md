@@ -30,4 +30,12 @@ When I google: Reticulum hello world
 
 Google's AI says, do the pip and then try these two python programs:
 
+`server.py`:
+
+{% codeFile "server.py" %}
+
+`client.py`:
+
+{% codeFile "client.py" %}
+
 

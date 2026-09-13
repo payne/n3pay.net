@@ -1,8 +1,12 @@
+import fs from "node:fs";
+import path from "node:path";
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import Prism from "prismjs";
+import "prismjs/components/prism-python.js";
 
 import pluginFilters from "./_config/filters.js";
 
@@ -37,6 +41,8 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("public/app-menu.json");
 	// Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+	// Watch source files embedded via the `codeFile` shortcode.
+	eleventyConfig.addWatchTarget("content/**/*.py");
 
 	// Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Bundle <style> content and adds a {% css %} paired shortcode
@@ -120,6 +126,19 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
+	});
+
+	// Renders a source file (relative to the current page) as a Prism-highlighted
+	// code block with line numbers, e.g. {% codeFile "client.py" %}
+	eleventyConfig.addShortcode("codeFile", function(relativePath, language = "python") {
+		const filePath = path.join(path.dirname(this.page.inputPath), relativePath);
+		const source = fs.readFileSync(filePath, "utf8").replace(/\n$/, "");
+
+		const grammar = Prism.languages[language];
+		const highlighted = grammar ? Prism.highlight(source, grammar, language) : source;
+		const lineNumberRows = "<span></span>".repeat(source.split(/\r?\n/).length);
+
+		return `<pre class="line-numbers language-${language}" data-src="${relativePath}"><code class="language-${language}">${highlighted}<span aria-hidden="true" class="line-numbers-rows">${lineNumberRows}</span></code></pre>`;
 	});
 
 	// Features to make your build faster (when you need them)

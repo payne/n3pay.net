@@ -137,3 +137,100 @@ added a `.gitignore` entry for `venv`.
 - `client.py` / `server.py` — pre-existing "hello world" RNS packet demo (not part
   of this session's work, but the context this session built on)
 - `reticulum.md` — the blog post draft that mentions LXMF's QR code feature
+
+# Claude Session: Embedding Python Files in `reticulum.md` with Line Numbers
+
+This documents a second Claude Code session, which added a way to display the
+contents of `server.py` and `client.py` directly inside `reticulum.md`, with line
+numbers, without adding any client-side JavaScript to the site.
+
+## Goal
+
+`reticulum.md` referenced "these two python programs" (the RNS hello-world
+demo) but didn't actually show their contents. The ask was to display the
+`.py` files in the post, preferring a rendering with line numbers.
+
+## Constraints from the project
+
+- The site is an Eleventy v3 blog (`eleventy.config.js`, `_includes/layouts/`)
+  that intentionally ships zero client-side JavaScript.
+- Syntax highlighting already goes through `@11ty/eleventy-plugin-syntaxhighlight`
+  (Prism under the hood), with the Okaidia theme and a diff CSS file included
+  per-post in `_includes/layouts/post.njk` via `<style>{% include "..." %}</style>`.
+- Markdown files are pre-processed as Nunjucks (`markdownTemplateEngine: "njk"`),
+  so custom Nunjucks shortcodes can be used directly inside `.md` files, and
+  markdown-it is configured with `html: true`, so raw HTML blocks a shortcode
+  returns pass through untouched.
+
+## Why not just use `{% highlight %}`
+
+The official syntax-highlight plugin's paired shortcode takes inline code as
+its *content*, not a file path, and has no built-in line-number gutter — its
+`highlightNumbers` option is for marking/emphasizing specific lines, not for
+displaying a running line count. Prism's real line-numbers feature ships as a
+separate plugin (`prismjs/plugins/line-numbers/`) that is normally applied by
+a small runtime JS hook, which conflicts with the site's zero-JS goal.
+
+## How it works
+
+Prism's line-numbers plugin, read directly from
+`node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js`, turns out to
+be pure CSS counters underneath: at runtime it just appends one empty
+`<span>` per source line into a `<span class="line-numbers-rows">` container
+inside `<code>`, and `prism-line-numbers.css` numbers them via
+`counter-increment`/`::before { content: counter(linenumber) }`. Nothing about
+that requires a browser — the exact same markup can be generated once at
+build time, since the line count of a file is already known then.
+
+Added to `eleventy.config.js`:
+
+- Imports `prismjs` and `prismjs/components/prism-python.js` directly (import
+  order matters: `prismjs/prism.js` sets a `global.Prism` that the untyped
+  component file mutates, so the core import must run first).
+- A `content/**/*.py` watch target, so the dev server rebuilds the post when a
+  referenced `.py` file changes.
+- A new `codeFile` universal shortcode:
+  - Resolves the given filename relative to the *current page's* directory
+    via `this.page.inputPath` (works because `addShortcode` is called with a
+    plain `function`, not an arrow function, so Eleventy binds `this` to the
+    page context).
+  - Reads the file, strips one trailing newline, and runs it through
+    `Prism.highlight(...)`.
+  - Counts lines and builds the matching number of `<span></span>` line-number
+    rows, producing the same markup shape the real Prism plugin builds at
+    runtime:
+    `<pre class="line-numbers language-python" data-src="..."><code class="language-python">{highlighted}<span aria-hidden="true" class="line-numbers-rows">{spans}</span></code></pre>`
+  - Eleventy's Nunjucks engine automatically wraps shortcode return values in
+    `nunjucks.runtime.SafeString`, so the raw HTML isn't escaped when used
+    inside the markdown/njk post.
+
+Added to `_includes/layouts/post.njk`:
+
+- `<style>{% include "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css" %}</style>`,
+  matching the existing pattern used for the Okaidia theme and diff CSS —
+  scoped to blog posts only, bundled per-page like the rest of the site's CSS.
+
+Added to `reticulum.md`:
+
+- `{% codeFile "server.py" %}` and `{% codeFile "client.py" %}`, replacing the
+  previously-empty reference to "these two python programs."
+
+## Verified
+
+- `npx @11ty/eleventy` build succeeded and produced the expected
+  `<pre class="line-numbers language-python" data-src="server.py">...` /
+  `data-src="client.py">...` markup with one `<span></span>` per source line
+  in `_site/blog/Reticulum/reticulum/index.html`.
+- Ran the Eleventy dev server locally and took a headless-Chromium screenshot
+  (`chromium --headless --disable-gpu --no-sandbox --screenshot=... "http://localhost:8099/blog/Reticulum/reticulum/"`)
+  to visually confirm the numbered gutter, syntax colors, and dark theme
+  render correctly — matching the rest of the site's styling.
+
+## Files touched this session
+
+- `eleventy.config.js` — added the Prism/Python imports, the `.py` watch
+  target, and the `codeFile` shortcode.
+- `_includes/layouts/post.njk` — added the line-numbers CSS include.
+- `content/blog/Reticulum/reticulum.md` — added the two `{% codeFile %}` calls.
+
+
