@@ -24,7 +24,8 @@ Through CoreScope each node has a unique URL.  My solar powered SenseCAP P1 Pro 
 
 ## Area HAMs using MeshCore 
 
-Because [NebraskaMesh.net suggests HAMs put their callsigns](https://www.nebraskamesh.net/help.html#naming-scheme) in their node names, I was able to have Claude scrape a node names into a SQLite database.  You can view the list of area nodes using call signs in their names here: [https://payne.github.io/NebraskaMeshScraping/ham.html](https://payne.github.io/NebraskaMeshScraping/ham.html).  It even lets you play with the database using WASM and [Datasette Lite](https://github.com/simonw/datasette-lite).
+
+I was able to have Claude scrape a node names into a SQLite database.  Because [NebraskaMesh.net suggests HAMs put their callsigns](https://www.nebraskamesh.net/help.html#naming-scheme) in their node names, you can view the list of area nodes using call signs in their names here: [https://payne.github.io/NebraskaMeshScraping/ham.html](https://payne.github.io/NebraskaMeshScraping/ham.html).  It even lets you play with the database using WASM and [Datasette Lite](https://github.com/simonw/datasette-lite).
 
 ## My favorite YouTube Playlist on MeshCore
 
